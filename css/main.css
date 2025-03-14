@@ -1,0 +1,518 @@
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/images/background-desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.lines{
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.top_line{
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    top: 50px;
+}
+
+.bottom_line{
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+}
+
+.circle{
+    position: absolute;
+    z-index: 2;
+    bottom: 280px;
+    right: 390px;
+
+}
+
+.main_cont{
+    width: 100%;
+    min-height: 110vh;
+    z-index: 100;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding-bottom: 100px;
+    padding-left: 30px;
+}
+
+.lines, .top_line, .bottom_line, .circle {
+    pointer-events: none;
+}
+
+
+
+.main_h1{
+    font-family: "Inconsolata";
+    font-weight: 800;
+    font-style: normal;
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.text_gp h2{
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(252, 6%, 83%,0.9);
+    font-size: 20px;
+    word-spacing: 4px;
+    text-align: center;
+}
+
+.img_input_box{
+    width: 335px;
+    height: 145px;
+    background-color: hsl(245, 15%, 58%,0.17);
+    border: 2px dashed hsl(245, 15%, 58%,0.8);
+    border-radius: 10px;
+    padding-left: 140px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.highlight{
+    background-color: hsl(245, 15%, 58%,0.7) !important;
+}
+
+.input_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    cursor: pointer;
+
+}
+
+.upload_icon{
+   width:30px;
+   height: 30px;
+   background-color: hsl(245, 19%, 35%,0.4);
+   border-radius: 15px;
+   padding: 10px;
+   border: 1px solid hsl(245, 15%, 58%,0.4);
+   position: absolute;
+   top:30px;
+   left: 209px;
+  
+}
+
+.input_text{
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16.5px;
+    color: hsl(252, 6%, 83%,0.9);
+    word-spacing: 4px;
+    position: absolute;
+    top:90px;
+    left: 89px;
+
+}
+
+.main_form{
+    margin-top: 40px;
+}
+
+.input_tilte{
+    font-family: "Inconsolata";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+    color:  hsl(0, 0%, 100% , 0.88);
+}
+
+.careful_text{
+    font-family: "Inconsolata";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    color: hsl(0, 0%, 100% , 0.7);
+    word-spacing: 4px;
+}
+
+.careful_message{
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+
+.empty_input{
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+
+.input_box{
+    width: 455px;
+    height: 30px;
+    border: 1px solid hsl(245, 15%, 58%,0.8);
+    border-radius: 10px;
+    background-color: hsl(245, 15%, 58%,0.17);
+    display: block;
+    color: white;
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 10px;
+    position: relative; 
+}
+
+.input_box:focus{
+    outline: 2px solid hsl(245, 15%, 58%);
+    box-shadow: 0 0 10px hsla(245, 100%, 80%, 0.5); /* Glowing effect */
+}
+ .space_take{
+    margin-bottom: 25px;
+}
+
+.Generate{
+    margin-top: 12px;
+    width: 477px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: hsl(7, 88%, 67%);
+    border: none;
+    font-family: "Inconsolata";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: hsl(248, 70%, 10%);
+    word-spacing: 4px;
+    cursor: pointer;
+    border: 2px solid black; /* Dark outline */
+}
+
+.Generate:focus{
+    border: 3px solid hsl(247, 34%, 30%); /* Thicker border */
+    outline: 2px solid hsl(245, 19%, 35%); /* Adds a visible outline */
+}
+
+.none{
+    display: none !important;
+}
+
+.ticket_generator{
+    width: 100%;
+    min-height: 110vh;
+    z-index: 100;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding-bottom: 100px;
+    padding-left: 30px;
+}
+
+.h1_sec_page{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    
+}
+
+.name{
+    background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.email_message{
+    font-family: "Inconsolata";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 21px;
+    color: hsl(246, 12%, 70%);
+    word-spacing: 4px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 100px;
+  
+}
+
+.email{
+    color: hsl(7, 86%, 67%);
+}
+
+.ticket{
+    background-image: url("../assets/images/pattern-ticket.svg");
+    width: 540px;
+    height: 220px;
+    padding: 30px;
+}
+
+.date{
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: hsl(246, 12%, 70%);
+    margin-left: 44px;
+}
+
+.preview_image{
+    width: 75px;
+    height: 75px;
+    border-radius: 12px;
+    margin-top: 65px;
+}
+
+.ticket_nm{
+    color: white;
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    gap:20px
+}
+
+.git_info{
+    display: flex;
+    align-items: center;
+    gap:7px
+}
+
+.ticket_git{
+    color: hsl(246, 12%, 70%);
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.data_text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+}
+
+.git_logo{
+    margin-top: 0px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 13px;
+}
+
+.ticket_num{
+    color: hsl(246, 12%, 70%,0.7);
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    transform: rotate(90deg);
+    margin-top: -140px;
+    margin-left: 480px;
+
+}
+
+.preview_image_input{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 206px;
+    bottom: 70px;
+    border: 1px rgb(149, 149, 149) solid;
+}
+
+.img_button{
+    background-color: hsl(245, 19%, 35%);
+    border: 0px;
+    border-radius: 8px;
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 95px;
+    margin-left: -20px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+
+.error{
+    color: hsl(7, 88%, 67%);
+}
+
+.border_error{
+    border: 1px solid hsl(7, 79%, 59%);
+}
+
+@media(max-width:1200px){
+    .bottom_line{
+        width: 400px;
+    }
+}
+
+@media(max-width:600px){
+    .main_h1{
+        font-size: 32px;
+        text-align: left;
+        width: 400px;
+    }
+
+    .logo{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+    .text_gp h2 {
+        margin-left: -30px;
+        width: 400px;
+    }
+    .input_tilte{
+        margin-left: 40px;
+    }
+    .img_input_box{
+        width: 200px;
+        margin-left: 40px;
+    }
+    .input_text{
+        font-size: 14px;
+        left: 50px;
+    }
+    .upload_icon{
+        left: 140px;
+    }
+    .careful_message{
+        margin-left: 40px;
+    }
+    .empty_input{
+        margin-left: 40px;
+    }
+    .careful_text{
+        font-size: 10px;
+        
+    }
+    .info_icon{
+        width: 10px;
+        height: 10px;
+        margin-top: 1px;
+    }
+    .input_box{
+        width: 317px;
+        margin-left: 40px;
+    }
+    .Generate{
+        width: 340px;
+        margin-left: 40px;
+    }
+    .main_form{
+        margin-left: -85px;
+    }
+    .bottom_line{
+        width: 240px;
+    }
+    .circle{
+        display: none;
+    }
+    .top_line{
+        width: 140px;
+    }
+    .buttons{
+        position: absolute;
+        left: 80px;
+    }
+    .preview_image_input{
+        position: absolute;
+        left: 155px;
+    }
+
+    /* Ticket-Page */
+
+    .h1_sec_page{
+        width: 380px;
+        text-align: center !important;
+        margin-left: -50px;
+    }
+    .email_message{
+        margin-left: -50px;
+        width: 380px;
+    }
+    .ticket{
+        width: 307px !important;
+        height: 111px !important;
+        background-size: cover;
+        margin-left: -60px;
+    }
+    #ticket_logo{
+        width: 120px;
+        height: 40px;
+        margin-left: -12px;
+        margin-top: -70px;
+        margin-bottom: 0px;
+    }
+    .preview_image{
+        width: 40px;
+        height: 40px;
+        margin-top: 8px;
+        margin-left: -10px;
+        margin-bottom: 5px;
+    }
+    .ticket_nm{
+        font-size: 16px;
+   
+    }
+    .data_text{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .ticket_num{
+        margin: 0px;
+        margin-left: 310px;
+        margin-top: -115px;
+        font-size: 16px;
+    }
+    .ticket_git{
+        font-size: 16px;
+    }
+    .git_logo{
+        width: 16px;
+        height: 16px;
+    }
+    .date{
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    html,body{
+        overflow-x: auto;
+    }
+}
+
+
+
+   

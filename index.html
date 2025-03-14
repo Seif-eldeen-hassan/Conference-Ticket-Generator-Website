@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=DM+Serif+Text:ital@0;1&family=DynaPuff:wght@400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Mystery+Quest&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Iso&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Dots&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <img class="lines " src="./assets/images/pattern-lines.svg">
+    <img class="top_line " src="./assets/images/pattern-squiggly-line-top.svg">
+    <img class="bottom_line " src="./assets/images/pattern-squiggly-line-bottom-desktop.svg">
+    <img class="circle " src="./assets/images/pattern-circle.svg">
+    
+  <div class="main_cont ">
+      <img class="logo" src="./assets/images/logo-full.svg">
+      <div class="text_gp">
+        <h1 class="main_h1"> Your Journey to Coding Conf 2025 Starts Here! </h1>
+        <h2> Secure your spot at next year's biggest coding conference.  </h2>
+      </div>
+      <div class="main_form">
+          <div class="take_img">
+              <h2 class="input_tilte">Upload Avatar </h2>
+              <div class="img_input_box">
+                  <img class="preview_image preview_image_input none"  src="./assets/images/image-avatar.jpg">
+                  <div class="buttons none">
+                     <button class="remove_img img_button"> Remove image </button>
+                     <button class="change_img img_button"> Change image</button>
+                  </div>
+                  <img class="upload_icon " src="./assets/images/icon-upload.svg">
+                  <input class="input_img " type="file" accept="image/png, image/jpeg">
+                  <h1 class="input_text ">Drag and drop or click to upload</h1>
+              </div>
+              <div class="careful_message ">
+                 <img class="info_icon " src="./assets/images/icon-info.svg">
+                  <img class="info_icon none " src="./assets/images/icon-info_.svg">
+                  <h3 class="careful_text ">  Upload your photo (JPG or PNG, max size: 500KB). </h3>
+                  <h3 class="careful_text error none">  File too large. Please upload a photo under 500KB </h3>
+              </div>
+          </div>
+          <div class="take_name space_take">
+              <h2 class="input_tilte" >Full Name </h2>
+              <input class="input_box" type="text" >
+              <div class="empty_input none">
+                <img class="info_icon  " src="./assets/images/icon-info_.svg">
+                <h3 class="careful_text error "> This field is required! </h3>
+              </div>
+          </div>
+          <div class="take_email space_take">
+              <h2 class="input_tilte" > Email Address </h2>
+              <input class="input_box" type="text"  placeholder="example@email.com">
+              <div class="careful_message none ">
+                  <img class="info_icon  " src="./assets/images/icon-info_.svg">
+                  <h3 class="careful_text error "> Please enter valid email address </h3>
+              </div>
+              <div class="empty_input none">
+                <img class="info_icon  " src="./assets/images/icon-info_.svg">
+                <h3 class="careful_text error "> This field is required! </h3>
+              </div>
+          </div>
+          <div class="take_github space_take">
+              <h2 class="input_tilte" >GitHub Username </h2>
+              <input class="input_box" type="text" placeholder="@yourusername" >
+              <div class="empty_input none">
+                <img class="info_icon  " src="./assets/images/icon-info_.svg">
+                <h3 class="careful_text error "> This field is required! </h3>
+              </div>
+          </div>
+          <button class="Generate"> Generate My Ticket </button>
+      </div>
+  </div>
+
+  <div class="ticket_generator none">
+    <img class="logo" src="./assets/images/logo-full.svg">
+    <h1 class="main_h1 h1_sec_page">Congrats, <span class="name">  </span><br> Your ticket is ready.</h1>
+    <h2 class="email_message"> We've emailed your ticket to<br> <span class="email">  sbdvsadv@gmail.com   </span> and will send updates in the run up to the event.</h2>
+    <div class="ticket">
+      <img class="logo" id="ticket_logo" src="./assets/images/logo-full.svg">
+      <h3 class="date"></h3>
+      <div class="data">
+        <img class="preview_image"  src="">
+        <div class="data_text">
+            <h1 class="ticket_nm">  </h1>
+            <div class="git_info">
+                <img class="git_logo"  src="./assets/images/icon-github.svg">
+                <h2 class="ticket_git"> </h2>
+            </div>
+        </div>
+      </div>
+      <h1 class="ticket_num">#01690 </h1>
+    </div>
+
+  </div>
+
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
